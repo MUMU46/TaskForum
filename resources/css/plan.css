@@ -1,0 +1,169 @@
+
+.plan-list{
+    position: relative;
+    display: flex;
+    width: 49%;
+    height: 80vh;
+    background-color: #f7fafc;
+    border-radius: 20px;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan-top{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+}
+
+.add_plan{
+    width: 100px;
+    height: 40px;
+    background-color: #edf0f5;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.add_plan:hover{
+    background-color: #e5e6e8;
+}
+.plan-item{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+.p_top{
+    width: 90%;
+    margin:0 5%;
+    height: 50px;
+    position: relative;
+    background-color: #edf2f7;
+    -webkit-border-top-left-radius:  10px;
+    -webkit-border-top-right-radius:  10px;
+}
+
+.plan_title{
+    display: flex;
+    font-size: 20px;
+    width: max-content;
+    height: 50px;
+    /*background-color: #4b5563;*/
+    line-height: 50px;
+    margin-left: 20px;
+    /*margin: 0 auto;*/
+}
+
+.p_leftTime
+{
+    position: absolute;
+    top: 0;
+    right: 80px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+}
+.unfold{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+}
+
+.p-delete{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+}
+
+.p_top:hover .p-delete{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+}
+
+.p_content{
+    display: block;
+    width: 90%;
+    min-height: 50px;
+    margin: 0 5%;
+    background-color: #edf2f7;
+    padding: 10px 20px;
+    position: relative;
+    -webkit-border-bottom-left-radius:  10px;
+    -webkit-border-bottom-right-radius:  10px;
+    /*border: 1px solid gray;*/
+}
+
+.tag{
+    width: max-content;
+    padding: 0 10px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    color: #4b5563;
+    background-color: #d4dae5;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.checkin{
+    width: max-content;
+    padding: 0 15px;
+    height: 30px;
+    background-color: #baccee;
+    line-height: 30px;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.cycle{
+    position: absolute;
+    width: max-content;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 10px;
+    right: 100px;
+}
+
+.checkinCount{
+    position: absolute;
+    width: max-content;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 10px;
+    right: 200px;
+}
+
+.checkin:hover{
+    background-color: #a9bbde;
+}
+
+.task-input input{
+    border-radius: 5px;
+    background-color: #edf0f5;
+    width: 96%;
+    margin: 0 2%;
+    border: 0;
+}
+
+
+

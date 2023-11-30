@@ -1,0 +1,60 @@
+.post-list{
+    width: 100%;
+    min-height: 80vh;
+    /*background-color: #f7fafc;*/
+}
+
+.post-item{
+    width: 90%;
+    padding:25px 20px;
+    min-height: 80px;
+    background-color:  #f7fafc;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 20px;
+    /*position: relative;*/
+}
+
+.post_top{
+    width: 100%;
+    height: 40px;
+    background-color: #f7fafc;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #565656;
+}
+
+.post_title{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post_content{
+    width: fit-content;
+    font-size: 20px;
+    color: #4a5568;
+    height: auto;
+}
+.add_tomine{
+    display: flex;
+    background-color: #d9e0ec;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #6f747e;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.add_tomine:hover{
+    background-color: #d1d7e0;
+}
+
+@font-face {
+    font-family: "阿里妈妈方圆体 VF Regular";src: url("//at.alicdn.com/wf/webfont/SnqcyY8Dz3SZ/3OmwogSoBpcG.woff2") format("woff2"),
+url("//at.alicdn.com/wf/webfont/SnqcyY8Dz3SZ/7lcfVpeoPe1I.woff") format("woff");
+    font-display: swap;
+}
