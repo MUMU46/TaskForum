@@ -12,7 +12,7 @@
     margin: 20px auto;
     border-radius: 10px;
     font-size: 20px;
-    /*position: relative;*/
+    position: relative;
 }
 
 .post_top{
@@ -53,6 +53,20 @@
     background-color: #d1d7e0;
 }
 
+.post-cycle{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width:110px;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #bdcce5;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+}
 @font-face {
     font-family: "阿里妈妈方圆体 VF Regular";src: url("//at.alicdn.com/wf/webfont/SnqcyY8Dz3SZ/3OmwogSoBpcG.woff2") format("woff2"),
 url("//at.alicdn.com/wf/webfont/SnqcyY8Dz3SZ/7lcfVpeoPe1I.woff") format("woff");

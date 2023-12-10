@@ -1,7 +1,22 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head } from '@inertiajs/react';
+import { Head, router } from '@inertiajs/react';
 import "../../css/Dashboard.css"
 export default function Dashboard({ auth , all_plans}) {
+
+    function AddtoMine(name, content ,cycle){
+        router.post(route('plan.add'),{
+            name: name,
+            content:content,
+            if_open:false,
+            cycle:cycle,
+            if_checkin: false,
+            check_counts: 0,
+        },{
+            onFinish:visit=>{
+                console.log('success add!')
+            }
+        });
+    }
     return (
         <AuthenticatedLayout
             user={auth.user}
@@ -26,7 +41,8 @@ export default function Dashboard({ auth , all_plans}) {
                                                 <div className="post_content">
                                                     {item.content}
                                                 </div>
-                                                <div className="add_tomine">添加到我的计划</div>
+                                                <div className="add_tomine" onClick={()=>AddtoMine(item.name,item.content, item.cycle)}>添加到我的计划</div>
+                                                <div className="post-cycle">打卡周期:{item.cycle}天</div>
                                             </div>
                                         )
                                     })
