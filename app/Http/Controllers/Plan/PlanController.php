@@ -55,8 +55,9 @@ class PlanController extends Controller{
 
                 // 计算下一次打卡的日期
                 $cycle = $plan->cycle;
-                $nextCheckinDate =Date('Y-m-d',strtotime("+$cycle day", $last_check_time));
-                $plan->update(['next_check_time' => $nextCheckinDate]);
+                $nextCheckinDate =date('Y-m-d',strtotime("+$cycle day", $last_check_time));
+                //dd( $nextCheckinDate );
+                $plan -> next_check_time = $nextCheckinDate;
                 $plan->update(['left_time' =>strtotime($nextCheckinDate) - $today]);
             }
             else{

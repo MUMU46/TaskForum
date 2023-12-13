@@ -33,7 +33,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
 
                 <div className="max-w-7xl mx-auto p-6 lg:p-8 W-box">
-                    <div className="Intro"><b>TaskTodo</b> <br />制定你的ddl列表 分享你的计划</div>
+                    <div className="Intro"><b>TaskForum</b> <br />制定你的ddl列表 分享你的计划</div>
 
 
                 </div>
